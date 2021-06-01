@@ -1,0 +1,13 @@
+replicaCount: 3
+image:
+  tag: prod
+
+redis:
+  host: hello-1-my-redis-master
+  port: 6379
+
+ingress:
+  hosts:
+    - host: prod.hello-world-1.com
+      paths:
+        - path: /

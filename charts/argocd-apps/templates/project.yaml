@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
+  name: hello
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  description: Project contains CWA team application
+  sourceRepos:
+    - https://github.com/chan43999/example-js
+  destinations:
+    - namespace: argocd
+      server: https://kubernetes.default.svc

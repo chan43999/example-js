@@ -1,0 +1,9 @@
+replicaCount: 3
+image:
+  tag: prod
+
+ingress:
+  hosts:
+    - host: prod.hello-world-2.com
+      paths:
+        - path: /

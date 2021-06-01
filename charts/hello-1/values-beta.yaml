@@ -1,0 +1,14 @@
+replicaCount: 2
+
+image:
+  tag: beta
+
+redis:
+  host: hello-1-my-redis-master
+  port: 6379
+
+ingress:
+  hosts:
+    - host: beta.hello-world-1.com
+      paths:
+        - path: /

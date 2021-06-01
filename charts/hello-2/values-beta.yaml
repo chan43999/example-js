@@ -1,0 +1,10 @@
+replicaCount: 2
+
+image:
+  tag: beta
+
+ingress:
+  hosts:
+    - host: beta.hello-world-2.com
+      paths:
+        - path: /
