@@ -12,6 +12,12 @@ spec:
     namespace: argocd
     server: https://kubernetes.default.svc
   project: hello
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=false
   source:
     path: charts/hello-1
     repoURL: https://github.com/chan43999/example-js
