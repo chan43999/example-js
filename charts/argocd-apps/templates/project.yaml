@@ -11,6 +11,7 @@ spec:
   description: Project contains CWA team application
   sourceRepos:
     - https://github.com/chan43999/example-js
+    - https://charts.jenkins.io
   destinations:
     - namespace: argocd
       server: https://kubernetes.default.svc
