@@ -6,6 +6,11 @@ locals {
         repositories = yamlencode([
           {
             url = var.repository
+          },
+          {
+            name = "jenkins"
+            type = "helm"
+            url = "https://charts.jenkins.io"
           }
         ])
       }
