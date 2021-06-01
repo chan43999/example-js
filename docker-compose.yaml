@@ -1,0 +1,19 @@
+services:
+  redis:
+    image: redis
+  hello-1:
+    build:
+      context: ./app/hello-1
+      dockerfile: ../../Dockerfile
+    ports:
+    - 8000:8000
+    environment:
+      - host=redis
+      - port=6379
+  hello-2:
+    build:
+      context: ./app/hello-2
+      dockerfile: ../../Dockerfile
+    ports:
+      - 8001:8000
+

@@ -1,0 +1,7 @@
+node_modules
+.idea
+.terraform
+*.hcl
+*.tfstate*
+*.tfvars
+override.tf

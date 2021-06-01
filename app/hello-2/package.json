@@ -1,0 +1,11 @@
+{
+  "name": "hello-2",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./hello-2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
