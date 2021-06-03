@@ -20,7 +20,7 @@ spec:
       - CreateNamespace=false
   source:
     path: charts/hello-1
-    repoURL: https://github.com/chan43999/example-js
+    repoURL: {GIT_REPOSITORYE}
     targetRevision: master
     helm:
       releaseName: hello-1

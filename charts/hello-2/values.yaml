@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: chan43999/hello-2
+  repository: {IMAGE_REGISTRY}/hello-2
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"

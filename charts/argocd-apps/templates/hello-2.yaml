@@ -20,9 +20,9 @@ spec:
       - CreateNamespace=false
   source:
     path: charts/hello-2
-    repoURL: https://github.com/chan43999/example-js
+    repoURL: {GIT_REPOSITORY}
     targetRevision: master
     helm:
-      releaseName: hello-1
+      releaseName: hello-2
       valueFiles:
         - ./values-beta.yaml
